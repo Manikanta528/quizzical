@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Karla', sans-serif;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.left-blob{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.right-blob{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+button{
+    padding: 12px 32px;
+    background-color: #4D5B9E;
+    color: #F5F7FB;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #5c6dbe;
+}
+button:active{
+    position: relative;
+    background-color: #4D5B9E;
+    top: 2px;
+}
+.question{
+    width: 50vw;
+}
+.multi-choice-holder{
+    font-size: 16px;
+    padding: 6px 24px;
+    border: 2px solid #4D5B9E;
+    color: #293264;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.multi-choice{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
 }
